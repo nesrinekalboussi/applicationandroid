@@ -2,10 +2,10 @@
 <body>
 nesrine 
 <?php
-define('DB_HOST', getenv('OPENSHIFT_DB_HOST'));
-define('DB_USER',getenv('OPENSHIFT_DB_USERNAME'));
-define('DB_PASS',getenv('OPENSHIFT_DB_PASSWORD'));
-define('DB_NAME',getenv('OPENSHIFT_DB_DBNAME'));
+define('DB_HOST', getenv('OPENSHIFTMYSQLHOST'));
+define('DB_USER',getenv('OPENSHIFTMYSQLUSERNAME'));
+define('DB_PASS',getenv('OPENSHIFTMYSQLPASSWORD'));
+define('DB_NAME',getenv('OPENSHIFTMYSQLDATABASENAME'));
 // Create connection
 $conn = mysqli_connect(DB_HOST,DB_USER,DB_PASS,DB_NAM);
 // Check connection
