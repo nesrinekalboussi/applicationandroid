@@ -24,14 +24,14 @@ if (mysqli_query($conn, $sql)) {
     echo "Error creating table: " . mysqli_error($conn);
 }
 $sql = "INSERT INTO Os (name, description,image)
-VALUES ('iOS', 'système d'exploitation mobile développé par Apple pour plusieurs de ses appareils', 'ios.png')";
+VALUES ('iOS', 'système d\'exploitation mobile développé par Apple pour plusieurs de ses appareils', 'ios.png')";
 if (mysqli_query($conn,$sql)) {
     echo "New record created successfullyy";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 $sql = "INSERT INTO Os (name,description,image)
-VALUES ('android', 'un système d'exploitation mobile basé sur le noyau Linux et développé actuellement par Google.', 'android.png')";
+VALUES ('android', 'un système d\'exploitation mobile basé sur le noyau Linux et développé actuellement par Google.', 'android.png')";
 if (mysqli_query($conn,$sql)) {
     echo "New record created successfully";
 } else {
@@ -45,7 +45,7 @@ if (mysqli_query($conn,$sql)) {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 $sql = "INSERT INTO Os (name,description,image)
-VALUES ('windows phone', 'un système d'exploitation mobile développé par Microsoft pour succéder à Windows Mobile', 'windows.png')";
+VALUES ('windows phone', 'un système d\'exploitation mobile développé par Microsoft pour succéder à Windows Mobile', 'windows.png')";
 if (mysqli_query($conn,$sql)) {
     echo "New record created successfully";
 } else {
