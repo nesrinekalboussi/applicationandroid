@@ -1,3 +1,8 @@
+<html>
+  <head>
+      <meta charset="utf-8">
+  </head>
+  <body>
 <?php
 define('DBHOST', getenv('OPENSHIFTMYSQLHOST'));
 define('DBUSER',getenv('OPENSHIFTMYSQLUSERNAME'));
@@ -13,3 +18,5 @@ $row = mysqli_fetch_assoc($result);
 echo json_encode($row);
 mysqli_close($conn);
 ?>
+  </body>
+</html>
