@@ -1,10 +1,10 @@
 <?php
-define('DB_HOST', getenv('OPENSHIFT_DB_HOST'));
-define('DB_USER',getenv('OPENSHIFT_DB_USERNAME'));
-define('DB_PASS',getenv('OPENSHIFT_DB_PASSWORD'));
-define('DB_NAME',getenv('OPENSHIFT_DB_DBNAME'));
+define('DBHOST', getenv('OPENSHIFTMYSQLHOST'));
+define('DBUSER',getenv('OPENSHIFTMYSQLUSERNAME'));
+define('DBPASS',getenv('OPENSHIFTMYSQLPASSWORD'));
+define('DBNAME',getenv('OPENSHIFTMYSQLDATABASENAME'));
 // Create connection
-$conn = mysqli_connect(DB_HOST,DB_USER, DB_PASS,DB_NAME);
+$conn = mysqli_connect(DBHOST,DBUSER, DBPASS,DBNAME);
 $sql = "SELECT * FROM Os where name like '".$_GET['name']."'";
 $result = mysqli_query($conn, $sql);
 if (mysqli_num_rows($result) > 0) {
