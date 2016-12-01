@@ -7,7 +7,7 @@ define('DB_USER',getenv('OPENSHIFTMYSQLUSERNAME'));
 define('DB_PASS',getenv('OPENSHIFTMYSQLPASSWORD'));
 define('DB_NAME',getenv('OPENSHIFTMYSQLDATABASENAME'));
 // Create connection
-$conn = mysqli_connect(DB_HOST,DB_USER,DB_PASS,DB_NAM);
+$conn = mysqli_connect(DB_HOST,DB_USER,DB_PASS,DB_NAME);
 // Check connection
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
