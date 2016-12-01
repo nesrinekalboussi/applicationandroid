@@ -14,9 +14,9 @@ if (!$conn) {
 echo "Connected successfully";
 $sql = "CREATE TABLE Os (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
-name VARCHAR(30) NOT NULL,
-description VARCHAR(30) NOT NULL,
-image VARCHAR(50) NOT NULL, 
+name VARCHAR(70) NOT NULL,
+description VARCHAR(70) NOT NULL,
+image VARCHAR(70) NOT NULL 
 )";
 if (mysqli_query($conn, $sql)) {
     echo "Table Os created successfully";
