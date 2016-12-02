@@ -7,7 +7,7 @@ define('DBPASS',getenv('OPENSHIFTMYSQLPASSWORD'));
 define('DBNAME',getenv('OPENSHIFTMYSQLDATABASENAME'));
 // Create connection
 $conn = mysqli_connect(DBHOST,DBUSER, DBPASS,DBNAME);
-$sql = "SELECT * FROM Os where name like '".$_GET['name']."'";
+$sql = "SELECT * FROM OS where name like '".$_GET['name']."'";
 $result = mysqli_query($conn, $sql);
 if (mysqli_num_rows($result) > 0) {
 $row = mysqli_fetch_assoc($result);
